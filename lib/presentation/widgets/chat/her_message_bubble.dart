@@ -1,8 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:yes_no_app/domain/entities/message.dart';
 
+// ignore: must_be_immutable
 class HerMessaggBubble extends StatelessWidget {
   HerMessaggBubble({super.key, required this.message});
   Message message;
@@ -39,7 +38,7 @@ class HerMessaggBubble extends StatelessWidget {
 }
 
 class _ImageBubble extends StatelessWidget {
-  const _ImageBubble({super.key, this.imageUrl});
+  const _ImageBubble({this.imageUrl});
   final String? imageUrl;
   @override
   Widget build(BuildContext context) {
